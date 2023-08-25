@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(232, 239, 238);
+}
+
+:root {
+    --bg-color: rgb(5, 29, 52);
+    --font-color: rgb(255, 255, 255);
+    --btn-bg: rgb(255, 115, 0);
+    --box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    --active-nav-bg: rgb(189, 87, 3);
+    --padding-nav-btn: 6px 20px;
+    --border-nav-radius: 6px;
+}
+
+.heade {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+
+}
+
+
+
+.heade header nav {
+    margin: 0px 40px;
+}
+
+.heade header nav .nav-brand {
+    margin: 30px 40px;
+}
+
+.heade header nav .nav-brand a {
+    text-decoration: none;
+    color: rgb(57, 28, 4);
+    font-size: 30px;
+}
+
+
+.heade header nav,
+ul {
+    display: flex;
+    align-items: center;
+}
+
+.heade header nav ul {
+    list-style: none;
+}
+
+.heade header nav ul li {
+    margin: 0px 30px;
+}
+
+.heade header nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+/* active btn */
+.active {
+    background-color: var(--active-nav-bg);
+    color: var(--font-color);
+    border-radius: var(--border-nav-radius);
+    padding: var(--padding-nav-btn);
+}
+
+/* active btn */
+
+/* collapse btn */
+.collapse-btn {
+    display: none;
+    position: relative;
+    float: right;
+    right: 40;
+    width: 30px;
+    top: 10px;
+}
+
+.collapse-btn button {
+
+    right: -20px;
+    cursor: pointer;
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: var(--border-nav-radius);
+}
+
+.collapse-btn button span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(167, 166, 166);
+    margin: 5px;
+}
+
+/*  end of collapse btn */
+
+
+/* main contaienr part */
+
+.container {
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    overflow: hidden;
+
+}
+
+.container .image,
+img {}
+
+/* end of contianer  main contaienr part */
+
+
+/* part products */
+
+.products {
+    margin-top: 30px;
+
+}
+
+.products h1 {
+    text-align: center;
+    color: lightgray;
+    letter-spacing: 10px;
+    font-weight: 500;
+}
+
+.products-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.products-cards .pro-card {
+    width: 300px;
+    /* border: 1px solid black; */
+    border-radius: var(--border-nav-radius);
+    margin: 20px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.products-cards .pro-card:nth-child(1) {
+    border-left: 20px solid orange;
+}
+
+.products-cards .pro-card:nth-child(2) {
+    border-left: 20px solid rgb(7, 112, 133);
+}
+
+.products-cards .pro-card:nth-child(3) {
+    border-left: 20px solid rgb(203, 63, 7);
+}
+
+.products-cards .pro-card h4 {
+    color: lightgray;
+}
+
+.products-cards .pro-card h4,
+p {
+    margin-bottom: 10px;
+
+}
+
+.products-cards .pro-card button {
+    padding: 6px 30px;
+    background-color: var(--active-nav-bg);
+    color: var(--font-color);
+    border: none;
+    cursor: pointer;
+    margin-left: 40px;
+    border-radius: var(--border-nav-radius);
+}
+
+/* end of product part  */
+
+
+/* part services */
+.services {
+    margin-top: 20px;
+}
+
+.services h2 {
+    text-align: center;
+    color: lightgrey;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.services .services-cards {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services-cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    border: 1px solid black;
+    border-radius: var(--border-nav-radius);
+    margin: 20px;
+}
+
+/* end of  part services */
+
+
+/* gallary part  */
+
+.gallary {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.gallary h1 {
+      
+      text-align: center;
+      font-weight: 500px;
+      letter-spacing: 10px;
+      color: lightgray;
+      margin-bottom: 20px;
+}
+
+.gallary-product{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.gallary-product img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    transition: all 0.5s ease-in;
+}
+
+
+
+/* end of gallary part  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive part  */
+
+@media screen and (max-width:900px) {
+
+    .heade {
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+
+    }
+
+    .collapse-btn {
+        display: block;
+    }
+
+    nav .navbar {
+        position: fixed;
+        top: -1200px;
+        width: 100%;
+        background-color: var(--bg-color);
+        opacity: 0.7;
+        left: 0px;
+        /* min-height: 500px; */
+        text-align: center;
+        transition: all 0.5s ease-in;
+
+    }
+
+    .fade {
+        top: 60px !important;
+    }
+
+    nav .navbar ul li {
+        width: 100%;
+    }
+
+    .btn-close {
+        font-size: 20px;
+        color: gray;
+        padding: 6px 16px;
+        right: -20px;
+        cursor: pointer;
+        border: 2px solid rgb(128, 128, 128);
+        border-radius: var(--border-nav-radius);
+    }
+
+    nav .navbar ul {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li a {
+        display: flex;
+        margin: 20px;
+    }
+
+    nav .nav-brand,
+    h4 {
+        font-size: 20px;
+        display: inline-flex;
+        width: 100% !important;
+        text-align: center;
+        position: relative;
+        bottom: 10px;
+    }
+
+    nav .nav-brand h4 {
+        color: var(--bg-color);
+    }
+}
+
+/* end of responsive part  responsive part  */
